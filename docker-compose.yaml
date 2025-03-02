@@ -1,0 +1,30 @@
+name: Docker Example
+
+services:
+   db:
+     image: mysql:5.7
+     restart: always
+     environment:
+       MYSQL_DATABASE: 'dummydb'
+       MYSQL_USER: 'dummyuser'
+       MYSQL_PASSWORD: 'dummypassword'
+       MYSQL_ROOT_PASSWORD: 'dummyrootpassword'
+     ports:
+       - '3306:3306'
+     expose:
+       - '3306'
+     volumes:
+       - my-db:/var/lib/mysql
+       - ./database:/tmp/database
+     command: mysqld --init-file="/tmp/database/init_db.sql"
+
+   backend:   
+     build: ./Docker.Dummy.Api
+     ports:
+       - "8081:80"
+       - "8443:443"
+     environment:
+        ASPNETCORE_ENVIRONMENT: "Docker"
+
+volumes:
+  my-db:

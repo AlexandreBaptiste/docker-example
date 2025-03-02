@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Docker.Dummy.Api", "Docker.Dummy.Api.csproj", "{D7BDC3F1-6BAD-4FBF-8FE2-26F76140CED7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Éléments de solution", "Éléments de solution", "{029FB086-28E6-4086-80CE-2C8BD8F188D1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D7BDC3F1-6BAD-4FBF-8FE2-26F76140CED7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7BDC3F1-6BAD-4FBF-8FE2-26F76140CED7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7BDC3F1-6BAD-4FBF-8FE2-26F76140CED7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7BDC3F1-6BAD-4FBF-8FE2-26F76140CED7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {77545F4C-51D0-4071-8E83-7BBE5AC36BFC}
+	EndGlobalSection
+EndGlobal
